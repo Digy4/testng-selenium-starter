@@ -22,4 +22,39 @@ public class Digy4DemoTest {
                 "Incorrect title encountered in the page.");
     }
 
+    @Test
+    public void verifyTitleInDigy4HomePage2() {
+        final WebDriver webDriver = Digy4TestNGSupport.getWebDriver();
+        webDriver.get("https://www.digy4.com/");
+        Assert.assertEquals(webDriver.get().getTitle(), "Home - Digy4",
+                "Incorrect title encountered in the page.");
+    }
+
+    @Test
+    public void verifyTitleInGoogleHomePage1() {
+        final WebDriver webDriver = Digy4TestNGSupport.getWebDriver();
+        webDriver.get("https://www.google.com");
+        webDriver.get("https://www.google.com/search?q=digy4");
+        webDriver.get("https://www.google.com/search?q=tricentis");
+        webDriver.get("https://news.google.com/home?hl=en-GB&gl=GB&ceid=GB:en");
+        Assert.assertEquals(webDriver.get().getTitle(), "Google");
+    }
+
+    @Test
+    public void verifyTitleInGoogleHomePageFail2() {
+        final WebDriver webDriver = Digy4TestNGSupport.getWebDriver();
+        webDriver.get("https://www.google.com/search?q=digy4");
+        webDriver.get("https://www.google.com/search?q=tricentis");
+        webDriver.get("https://news.google.com/home?hl=en-GB&gl=GB&ceid=GB:en");
+        Assert.assertEquals(webDriver.getTitle(), "Google1");
+    }
+
+    @Test
+    public void verifyTitleInGoogleHomePage3() {
+        final WebDriver webDriver = Digy4TestNGSupport.getWebDriver();
+        webDriver.get("https://www.google.com/search?q=digy4");
+        webDriver.get("https://www.google.com/search?q=tricentis");
+        webDriver.get("https://news.google.com/home?hl=en-GB&gl=GB&ceid=GB:en");
+        Assert.assertEquals(webDriver.getTitle(), "Google");
+    }
 }
