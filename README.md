@@ -12,33 +12,15 @@ TestNG and Selenium starter to use with DigyRunner
 ## How to build and run using maven
 
 ### Clone the repository
+## Details steps available here - https://help.digy4.com/docs/digy-dashboard/digyrunner-integration/selenium-testng/
 - Clone the repository. Run `git clone https://github.com/Digy4/testng-selenium-starter`
 
 ## Configurations
 - Supply Hub URL for any remote/local selenium grid `digy4.hubUrl` in `src/test/resources/digy4.config.properties` file
+- More details on parameters https://help.digy4.com/docs/digy-dashboard/digyrunner-integration/
 
 ## Run the tests
 - Run `mvn clean verify`
 
 ## Explore the results in the Digy Dashboard
-- Visit `https://release-saas-sprint-1.dkhmetqbwqyzu.amplifyapp.com/`
-
-## How to build and run using Gradle
-
-### Prerequisites
-- Java version 9 and above is required for running with Gradle
-
-### Clone the repository
-- Clone the repository. Run `git clone https://github.com/Digy4/testng-selenium-starter`
-
-## Configurations
-- Supply Hub URL for any remote/local selenium grid `digy4.hubUrl` in `src/test/resources/digy4.config.properties` file
-
-## Run the build
-- Run `gradle build`
-
-## Run the tests
-- Run `gradle digy4DemoTest`
-
-## Explore the results in the Digy Dashboard
-- Visit `https://release-saas-sprint-1.dkhmetqbwqyzu.amplifyapp.com/`
+- Visit `https://dashboard.digy4.com/`

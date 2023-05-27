@@ -27,7 +27,7 @@ public class CommonStepDefinitions {
 	public static void clickElement(WebDriver driver, By element, long pauseTime) throws InterruptedException {
 		Thread.sleep(pauseTime);
 		
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		WebElement e = wait.until(ExpectedConditions.elementToBeClickable(element));
 		e.click();
 	}
@@ -39,7 +39,7 @@ public class CommonStepDefinitions {
 	public static void waitElement(WebDriver driver, By element, long pauseTime) throws InterruptedException {
 		Thread.sleep(pauseTime);
 		
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
@@ -51,7 +51,7 @@ public class CommonStepDefinitions {
 	public static void clickWebElement(WebDriver driver, WebElement element, long pauseTime) throws InterruptedException {
 		Thread.sleep(pauseTime);
 		
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 		
 		element.click();
@@ -60,7 +60,7 @@ public class CommonStepDefinitions {
 	public static void sendKeyElement(WebDriver driver, By element, String keys, long pauseTime) throws InterruptedException {
 		Thread.sleep(pauseTime);
 		
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		WebElement e = wait.until(ExpectedConditions.elementToBeClickable(element));
 		e.clear();
 		e.sendKeys(keys);

@@ -26,7 +26,7 @@ public class Digy4DemoTest {
     public void verifyTitleInDigy4HomePage2() {
         final WebDriver webDriver = Digy4TestNGSupport.getWebDriver();
         webDriver.get("https://www.digy4.com/");
-        Assert.assertEquals(webDriver.get().getTitle(), "Home - Digy4",
+        Assert.assertEquals(webDriver.getTitle(), "Home - Digy4",
                 "Incorrect title encountered in the page.");
     }
 
@@ -37,7 +37,7 @@ public class Digy4DemoTest {
         webDriver.get("https://www.google.com/search?q=digy4");
         webDriver.get("https://www.google.com/search?q=tricentis");
         webDriver.get("https://news.google.com/home?hl=en-GB&gl=GB&ceid=GB:en");
-        Assert.assertEquals(webDriver.get().getTitle(), "Google");
+        Assert.assertEquals(webDriver.getTitle(), "Before you continue");
     }
 
     @Test
@@ -46,7 +46,7 @@ public class Digy4DemoTest {
         webDriver.get("https://www.google.com/search?q=digy4");
         webDriver.get("https://www.google.com/search?q=tricentis");
         webDriver.get("https://news.google.com/home?hl=en-GB&gl=GB&ceid=GB:en");
-        Assert.assertEquals(webDriver.getTitle(), "Google1");
+        Assert.assertEquals(webDriver.getTitle(), "Before you continue");
     }
 
     @Test
