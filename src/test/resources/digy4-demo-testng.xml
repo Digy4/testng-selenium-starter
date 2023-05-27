@@ -3,12 +3,7 @@
 
 <suite name="TestNGDemoSuite">
 
-	<listeners>
-		<listener
-			class-name="com.digy4.java.testng.Digy4TestNGSupport"></listener>
-	</listeners>
-
-	<test name="Digy4DemoTest" parallel="methods" thread-count="10">
+	<test name="Digy4DemoTest" parallel="methods" thread-count="20">
         <classes>
             <class name="com.digy4.testng.Digy4DemoTest"/>
         </classes>
