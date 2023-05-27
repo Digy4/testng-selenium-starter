@@ -24,3 +24,23 @@ TestNG and Selenium starter to use with DigyRunner
 
 ## Explore the results in the Digy Dashboard
 - Visit `https://dashboard.digy4.com/`
+
+## How to build and run using Gradle
+
+### Prerequisites
+- Java version 9 and above is required for running with Gradle
+
+### Clone the repository
+- Clone the repository. Run `git clone https://github.com/Digy4/testng-selenium-starter`
+
+## Configurations
+- Supply Hub URL for any remote/local selenium grid `digy4.hubUrl` in `src/test/resources/digy4.config.properties` file
+
+## Run the build
+- Run `gradle build`
+
+## Run the tests
+- Run `gradle digy4DemoTest`
+
+## Explore the results in the Digy Dashboard
+- Visit `https://dashboard.digy4.com/`
