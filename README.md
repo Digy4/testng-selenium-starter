@@ -23,7 +23,7 @@ TestNG and Selenium starter to use with DigyRunner
 - Clone the repository. Run `git clone https://github.com/Digy4/testng-selenium-starter`
 - `cd testng-selenium-starter`
 - For -Ddigy4.projectName=, use the project name you have created above (eg: Demo)
-- for digy4.auth.key use the client ID and digy4.auth.secret, use the client secret from above
+- For digy4.client_id use the client ID and digy4.client_secret, use the client secret from above
 - ` mvn clean install -Ddigy4.framework=testng -Ddigy4.teamName=Avengers -Ddigy4.projectName=Demo -Ddigy4.testType=WEB -Ddigy4.moduleName=LocalBrowser -Ddigy4.suiteName=integration -Ddigy4.threads=2 -Ddigy4.browser=chrome  -Ddigy4.cloudFarm=CUSTOM -Ddigy4.localBrowser=chrome -Ddigy4.client_id= -Ddigy4.client_secret=`
 - Once this has completed, you can see the results in the DigyDashboard https://dashboard.digy4.com
 
