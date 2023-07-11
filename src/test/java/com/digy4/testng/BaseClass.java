@@ -18,22 +18,16 @@ import org.testng.annotations.BeforeMethod;
 public class BaseClass {
 
 	public static WebDriver driver;
-	public static Properties prop;
-	public static String otp;
-	public static Properties loc;
-	public static String mobile;
-	public static String usrm;
+	//public static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
+	//public static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 
     @BeforeMethod
     public void commonSetup(ITestResult testResult) throws IOException {
-        //System.out.println("BaseClass:commonSetup: value of browser property: " + browser);
             new Digy4TestNGSupport().onTestStart(testResult);
             driver = Digy4TestNGSupport.getWebDriver();
 			driver.get("https://www.google.com");
             System.out.println("BaseClass:commonSetup: value of digy4 driver: " + driver);
-    
-        System.out.println("BaseClass:commonSetup: value of driver: " + driver);
     }
-	
+
 
 }
