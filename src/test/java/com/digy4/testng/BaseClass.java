@@ -25,7 +25,7 @@ public class BaseClass {
     public void commonSetup(ITestResult testResult) throws IOException {
             new Digy4TestNGSupport().onTestStart(testResult);
             driver = Digy4TestNGSupport.getWebDriver();
-			driver.get("https://www.google.com");
+			//driver.get("https://www.google.com");
             System.out.println("BaseClass:commonSetup: value of digy4 driver: " + driver);
     }
 
