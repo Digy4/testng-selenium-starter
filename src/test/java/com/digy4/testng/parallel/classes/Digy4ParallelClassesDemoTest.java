@@ -1,4 +1,4 @@
-package com.digy4.testng;
+package com.digy4.testng.parallel.classes;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

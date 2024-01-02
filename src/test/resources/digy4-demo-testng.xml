@@ -5,13 +5,13 @@
 
 	<test name="Digy4ParallelClassesDemoTest" parallel="classes" thread-count="20">
         <classes>
-            <class name="com.digy4.testng.Digy4ParallelClassesDemoTest"/>
+            <class name="com.digy4.testng.parallel.classes.Digy4ParallelClassesDemoTest"/>
         </classes>
     </test>
 
     <test name="Digy4ParallelMethodsDemoTest" parallel="methods" thread-count="20">
         <classes>
-            <class name="com.digy4.testng.Digy4ParallelMethodsDemoTest"/>
+            <class name="com.digy4.testng.parallel.methods.Digy4ParallelMethodsDemoTest"/>
         </classes>
     </test>
 

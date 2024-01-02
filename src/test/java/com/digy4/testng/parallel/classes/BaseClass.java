@@ -1,4 +1,4 @@
-package com.digy4.testng;
+package com.digy4.testng.parallel.classes;
 
 import com.digy4.java.testng.Digy4TestNGSupport;
 import org.openqa.selenium.WebDriver;
