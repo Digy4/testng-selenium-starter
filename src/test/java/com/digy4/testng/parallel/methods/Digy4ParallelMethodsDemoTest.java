@@ -4,20 +4,19 @@ import com.digy4.java.testng.Digy4TestNGSupport;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import com.digy4.testng.BaseClass;
 
-public class Digy4DemoTest extends BaseClass {
+public class Digy4ParallelMethodsDemoTest {
 
     @Test
     public void verifyTitleInHomePageSuccess() {
-        //final WebDriver webDriver = Digy4TestNGSupport.getWebDriver();
+        final WebDriver driver = Digy4TestNGSupport.getWebDriver();
         driver.get("https://www.saucedemo.com/");
         Assert.assertEquals(driver.getTitle(), "Swag Labs");
     }
 
     @Test
     public void verifyTitleInHomePageFailure() {
-        //final WebDriver webDriver = Digy4TestNGSupport.getWebDriver();
+        final WebDriver driver = Digy4TestNGSupport.getWebDriver();
         driver.get("https://www.saucedemo.com/");
         Assert.assertEquals(driver.getTitle(), "Not Swag Labs",
                 "Incorrect title encountered in the page.");
@@ -25,7 +24,7 @@ public class Digy4DemoTest extends BaseClass {
 
     @Test
     public void verifyTitleInDigy4HomePage2() {
-        //final WebDriver webDriver = Digy4TestNGSupport.getWebDriver();
+        final WebDriver driver = Digy4TestNGSupport.getWebDriver();
         driver.get("https://www.digy4.com/");
         Assert.assertEquals(driver.getTitle(), "Home - Digy4",
                 "Incorrect title encountered in the page.");
@@ -33,7 +32,7 @@ public class Digy4DemoTest extends BaseClass {
 
     @Test
     public void verifyTitleInGoogleHomePage1() {
-        //final WebDriver webDriver = Digy4TestNGSupport.getWebDriver();
+        final WebDriver driver = Digy4TestNGSupport.getWebDriver();
         driver.get("https://www.google.com");
         driver.get("https://www.google.com/search?q=digy4");
         driver.get("https://www.google.com/search?q=tricentis");
@@ -43,7 +42,7 @@ public class Digy4DemoTest extends BaseClass {
 
     @Test
     public void verifyTitleInGoogleHomePageFail2() {
-        //final WebDriver webDriver = Digy4TestNGSupport.getWebDriver();
+        final WebDriver driver = Digy4TestNGSupport.getWebDriver();
         driver.get("https://www.google.com/search?q=digy4");
         driver.get("https://www.google.com/search?q=tricentis");
         driver.get("https://news.google.com/home?hl=en-GB&gl=GB&ceid=GB:en");
@@ -52,10 +51,11 @@ public class Digy4DemoTest extends BaseClass {
 
     @Test
     public void verifyTitleInGoogleHomePage3() {
-        //final WebDriver webDriver = Digy4TestNGSupport.getWebDriver();
+        final WebDriver driver = Digy4TestNGSupport.getWebDriver();
         driver.get("https://www.google.com/search?q=digy4");
         driver.get("https://www.google.com/search?q=tricentis");
         driver.get("https://news.google.com/home?hl=en-GB&gl=GB&ceid=GB:en");
         Assert.assertEquals(driver.getTitle(), "Google");
     }
+
 }

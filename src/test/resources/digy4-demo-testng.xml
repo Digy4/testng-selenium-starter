@@ -3,10 +3,16 @@
 
 <suite name="TestNGDemoSuite">
 
-	<test name="Digy4DemoTest" parallel="methods" thread-count="20">
+	<test name="Digy4ParallelClassesDemoTest" parallel="classes" thread-count="20">
         <classes>
-            <class name="com.digy4.testng.Digy4DemoTest"/>
+            <class name="com.digy4.testng.Digy4ParallelClassesDemoTest"/>
         </classes>
     </test>
-  
-</suite> 
+
+    <test name="Digy4ParallelMethodsDemoTest" parallel="methods" thread-count="20">
+        <classes>
+            <class name="com.digy4.testng.Digy4ParallelMethodsDemoTest"/>
+        </classes>
+    </test>
+
+</suite>
