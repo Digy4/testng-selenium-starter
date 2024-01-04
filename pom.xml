@@ -12,7 +12,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <digyrunner.version>0.0.89</digyrunner.version>
+        <digyrunner.version>0.0.90</digyrunner.version>
     </properties>
 
     <repositories>
