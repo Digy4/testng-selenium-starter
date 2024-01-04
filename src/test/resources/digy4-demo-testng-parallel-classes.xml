@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNGDemoSuiteParallelClasses">
+
+	<test name="Digy4ParallelClassesDemoTest" parallel="classes" thread-count="2">
+        <classes>
+            <class name="com.digy4.testng.parallel.classes.Digy4ParallelClassesDemoTest1"/>
+            <class name="com.digy4.testng.parallel.classes.Digy4ParallelClassesDemoTest2"/>
+        </classes>
+    </test>
+
+</suite>
