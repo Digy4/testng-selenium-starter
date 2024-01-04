@@ -31,7 +31,12 @@ TestNG and Selenium starter to use with DigyRunner
 - More details on parameters https://help.digy4.com/docs/digy-dashboard/digyrunner-integration/
 
 ## Run the tests
-- Run `mvn clean install -Ddigy4.framework=testng -Ddigy4.teamName=Avengers -Ddigy4.projectName=Demo -Ddigy4.testType=WEB -Ddigy4.moduleName=LocalBrowser -Ddigy4.suiteName=integration -Ddigy4.threads=2 -Ddigy4.browser=chrome  -Ddigy4.cloudFarm=CUSTOM -Ddigy4.localBrowser=chrome -Ddigy4.client_id= -Ddigy4.client_secret=`
+
+### For running tests with configuration parallel=classes
+- Run `mvn clean install -Ddigy4.starter.parallel=classes -Ddigy4.framework=testng -Ddigy4.teamName=Avengers -Ddigy4.projectName=Demo -Ddigy4.testType=WEB -Ddigy4.moduleName=LocalBrowser -Ddigy4.suiteName=integration -Ddigy4.threads=2 -Ddigy4.browser=chrome  -Ddigy4.cloudFarm=CUSTOM -Ddigy4.localBrowser=chrome -Ddigy4.client_id= -Ddigy4.client_secret=`
+
+### For running tests with configuration parallel=methods
+- Run `mvn clean install -Ddigy4.starter.parallel=methods -Ddigy4.framework=testng -Ddigy4.teamName=Avengers -Ddigy4.projectName=Demo -Ddigy4.testType=WEB -Ddigy4.moduleName=LocalBrowser -Ddigy4.suiteName=integration -Ddigy4.threads=2 -Ddigy4.browser=chrome  -Ddigy4.cloudFarm=CUSTOM -Ddigy4.localBrowser=chrome -Ddigy4.client_id= -Ddigy4.client_secret=`
 
 ## Explore the results in the Digy Dashboard
 - Visit `https://dashboard.digy4.com/`
