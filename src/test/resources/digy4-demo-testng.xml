@@ -3,7 +3,7 @@
 
 <suite name="TestNGDemoSuite">
 
-	<test name="Digy4DemoTest" parallel="methods" thread-count="20">
+	<test name="Digy4DemoTest" parallel="methods" thread-count="2">
         <classes>
             <class name="com.digy4.testng.Digy4DemoTest"/>
         </classes>

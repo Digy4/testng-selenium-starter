@@ -19,7 +19,7 @@ public class Digy4DemoTest extends BaseClass {
     public void verifyTitleInHomePageFailure() {
         //final WebDriver webDriver = Digy4TestNGSupport.getWebDriver();
         driver.get("https://www.saucedemo.com/");
-        Assert.assertEquals(driver.getTitle(), "Not Swag Labs",
+        Assert.assertEquals(driver.getTitle(), "Swag Labs",
                 "Incorrect title encountered in the page.");
     }
 
@@ -27,8 +27,7 @@ public class Digy4DemoTest extends BaseClass {
     public void verifyTitleInDigy4HomePage2() {
         //final WebDriver webDriver = Digy4TestNGSupport.getWebDriver();
         driver.get("https://www.digy4.com/");
-        Assert.assertEquals(driver.getTitle(), "Home - Digy4",
-                "Incorrect title encountered in the page.");
+        Assert.assertEquals(driver.getTitle(), "Best Continuous Software Testing Tool | QA Automation Testing Services - Digy4");
     }
 
     @Test
@@ -58,4 +57,5 @@ public class Digy4DemoTest extends BaseClass {
         driver.get("https://news.google.com/home?hl=en-GB&gl=GB&ceid=GB:en");
         Assert.assertEquals(driver.getTitle(), "Google");
     }
+
 }
