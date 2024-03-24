@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNGDemoSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Digy4DemoTest(failed)">
+    <classes>
+      <class name="testng.AmazonLeftNavigationTest">
+        <methods>
+          <include name="AmazonLeftNavigationtestcase"/>
+        </methods>
+      </class> <!-- testng.AmazonLeftNavigationTest -->
+    </classes>
+  </test> <!-- Digy4DemoTest(failed) -->
+</suite> <!-- Failed suite [TestNGDemoSuite] -->

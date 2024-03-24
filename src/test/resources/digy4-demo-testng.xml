@@ -5,7 +5,11 @@
 
 	<test name="Digy4DemoTest" parallel="methods" thread-count="20">
         <classes>
-            <class name="com.digy4.testng.Digy4DemoTest"/>
+            <!--<class name="com.digy4.testng.Digy4DemoTest"/>
+             <class name="testng.eBayTest"/>-->
+             <class name="testng.AmazonIndiaPurchaseTest"/>
+             <class name="testng.AmazonTest"/>
+             <class name="testng.AmazonLeftNavigationTest"/>
         </classes>
     </test>
   
